@@ -20,24 +20,26 @@ export default async function Top20Page() {
 
   return (
     <div>
-      <header>
-        <h1>Hacker News Viewer</h1>
+      <header className="py-4 px-4 border-b-2 border-gray-500">
+        <h1 className="text-2xl">Hacker News Viewer</h1>
       </header>
-      <div id="container">
-        <div id="sidebar">
-          <h2>Top 20</h2>
-          <nav>
+      <div id="container" className="flex">
+        <div id="sidebar" className="py-4 px-4 w-1/3">
+          <h2 className="text-xl">Top 20</h2>
+          <nav className="pl-4 py-2">
             <ul>
               {top20Summary.map((item) => (
                 <li key={String(item.id)}>
                   {/* タイトルをリンクにする */}
-                  <Link href={`/top20/${item.id}`}>{item.title}</Link>
+                  <Link href={`/top20/${item.id}`} className="hover:underline">
+                    {item.title}
+                  </Link>
                 </li>
               ))}
             </ul>
           </nav>
         </div>
-        <main>
+        <main className="flex-1 py-4 px-2 w-2/3">
           <div>本文をここに表示する</div>
           {/* {children} */}
         </main>
