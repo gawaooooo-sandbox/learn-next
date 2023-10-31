@@ -1,3 +1,8 @@
+[CodeZine 「Next.jsの新しい概念を学ぶ」](https://codezine.jp/article/corner/970) より
+
+
+----
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
