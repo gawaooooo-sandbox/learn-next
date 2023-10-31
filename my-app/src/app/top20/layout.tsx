@@ -24,11 +24,11 @@ export default async function Top20Layout({
   return (
     <div>
       <header className="py-4 px-4 border-b-2 border-gray-500">
-        <h1 className="text-2xl">Hacker News Viewer</h1>
+        <h1 className="text-3xl">Hacker News Viewer</h1>
       </header>
       <div id="container" className="flex">
         <div id="sidebar" className="py-4 px-4 w-1/3">
-          <h2 className="text-xl">Top 20</h2>
+          <h2 className="text-2xl">Top 20</h2>
           <nav className="pl-4 py-2">
             <ul>
               {top20Summary.map((item) => (
